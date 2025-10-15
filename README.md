@@ -1,34 +1,48 @@
-# Astro Starter Kit: Basics
+Github: 
+Trees:
+    Main
+    Working
+    Publish
+    Experimenting
 
-```sh
-npm create astro@latest -- --template basics
-```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-## 🚀 Project Structure
+Dependencies (short)
+Astro 5.14.5
+Tailwind 4
+Daisy Ui
+Theme-Change by saadeghi
+Shadnc/ui
+AlpineJS
 
-Inside of your Astro project, you'll see the following folders and files:
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+Dependency Manual Install Instructions
+Astro 5.14.5
+    DOCS: https://docs.astro.build/en/install-and-setup/
+    Create: npm create astro@latest
 
-## 🧞 Commands
+Styling:
+TailwindCSS 4
+    npx astro add tailwind
+    ==> Follow docs: https://docs.astro.build/en/guides/styling/#tailwind
+
+
+Daisy Ui
+    npm i -D daisyui@latest
+    ==> Follow docs: https://daisyui.com/docs/install/
+
+Theme Change: https://github.com/saadeghi/theme-change
+
+Shadnc/ui
+
+Scriping:
+AlpineJS
+
+
+
+
+
 
 All commands are run from the root of the project, from a terminal:
 
