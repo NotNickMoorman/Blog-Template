@@ -8,7 +8,7 @@ import Footer from "../components/footer.astro";
 
 
 //JS
-const { theme = site.defaultTheme, pageTitle = "Page Title"} = Astro.props || {};
+const { theme = "", pageTitle = "Page Title"} = Astro.props || {};
 const fullTitle = site.title + " | " + pageTitle;
 ---
 

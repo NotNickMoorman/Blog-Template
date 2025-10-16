@@ -31,6 +31,7 @@ TailwindCSS 4
 Daisy Ui
     npm i -D daisyui@latest
     ==> Follow docs: https://daisyui.com/docs/install/
+    https://daisyui.com/docs/utilities/
 
 Theme Change: https://github.com/saadeghi/theme-change
 
