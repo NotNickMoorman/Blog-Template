@@ -6,6 +6,7 @@ import { site } from '../data/site';
 import Header from "../components/header.astro";
 import Footer from "../components/footer.astro";
 
+
 //JS
 const { theme = site.defaultTheme, pageTitle = "Page Title"} = Astro.props || {};
 const fullTitle = site.title + " | " + pageTitle;
@@ -23,7 +24,6 @@ const fullTitle = site.title + " | " + pageTitle;
 
 	<body>
 		<Header pageTitle={pageTitle} />
-		<div class="h-32"></div>
 
 		<main>
 			<slot />
@@ -31,15 +31,4 @@ const fullTitle = site.title + " | " + pageTitle;
 
 		<Footer />
 	</body>
-
 </html>
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		min-height: 100vh;
-		display: flex;
-		flex-direction: column;
-	}
-</style>

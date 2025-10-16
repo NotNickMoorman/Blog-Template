@@ -1,5 +1,42 @@
 @import "tailwindcss";
 
+/* GLOBAL CSS STYLING */
+
+:root {
+  --gutter: 0px;
+}
+
+body {
+  background-color: var(--color-base-200);
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /*overflow-x: hidden;*/
+}
+
+.container {
+  width: 100vw;
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+
+header{
+  @apply sticky top-0 w-full border-b bg-base-300/90 h-16 flex items-center;
+}
+
+
+
+
+
+
+/*END GLOBAL CSS STYLING */
+
+
+
+
+/*DAISY UI*/
 @plugin "daisyui" {
   themes: all;
 }
@@ -18,8 +55,8 @@
   --color-base-200: oklch(15% 0.08 209);
   --color-base-300: oklch(10% 0.08 209);
   --color-base-content: oklch(90% 0.076 70.697);
-  --color-primary: oklch(92% 0.2653 125);
-  --color-primary-content: oklch(50% 0.2653 125);
+  --color-primary:oklch(0.7059 0.037 222.35);
+  --color-primary-content: oklch(90% 0.076 70.697);
   --color-secondary: oklch(83.27% 0.0764 298.3);
   --color-secondary-content: oklch(43.27% 0.0764 298.3);
   --color-accent: oklch(43% 0 0);
@@ -43,3 +80,67 @@
   --depth: 1;
   --noise: 0;
 }
+
+
+
+/*=========================*/
+/* CSS RESET */
+/*=========================*/
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+* {
+  line-height: calc(1em + 0.5rem);
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/*=========================*/
+/*END CSS RESET */
+/*=========================*/
+
+
