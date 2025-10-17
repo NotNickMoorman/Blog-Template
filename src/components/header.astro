@@ -5,11 +5,26 @@ import '../styles/global.css';
 const { pageTitle = "Page Title" } = Astro.props;
 ---		
         <header>
-			<div class="container">
-				<content>
-					<h1>{pageTitle}</h1>
-					<nav>
-					</nav>
-				</content>
+			<div class="navbar shadow-lg">
+			<div class="flex-1">
+				<a class="btn btn-ghost text-xl" href="/">No More Mondays</a>
+			</div>
+			<div class="flex-none">
+				<ul class="menu menu-horizontal px-1">
+				<li><a href="/">Home</a></li>
+				<li>
+					<details>
+					<summary>Library Demos</summary>
+					<ul class="bg-base-100 rounded-t-none p-2">
+						<li><a href="/DaisyDemoPage">DaisyUi Demo</a></li>
+						<li><a>Shadcn/Ui Demo</a></li>
+					</ul>
+					</details>
+				</li>
+				</ul>
+			</div>
 			</div>
 		</header>
+
+
+		

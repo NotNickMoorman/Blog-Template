@@ -1,12 +1,16 @@
 ---
 import "../styles/global.css";
+
+const { pageTitle = "Page Title" } = Astro.props;
+const {tagline = ""} = Astro.props;
 ---
 <hero>
         <div class="text-center pt-16 min-h-75 bg-base-200 border-b">
             <h1 class="text-5xl font-bold">
-                Daisy UI Demonstrations
+                {pageTitle}
             </h1>
-            <p class="py-6">Wow! Would you look at that!</p>
+            <p class="py-6">{tagline}</p>
+            <slot></slot>
         </div>
 </hero>
 
